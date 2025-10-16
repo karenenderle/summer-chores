@@ -1,11 +1,11 @@
 # Summer Chores (Callback Practice)
 
-This JavaScript project demonstrates how to use **Promises** and **asynchronous functions** (`setTimeout`) to simulate a sequence of summer chores, complete with success and failure outcomes.
+This JavaScript project demonstrates how to use **Promises** and **asynchronous functions** (`async/await`) to simulate a sequence of summer chores, complete with success and failure outcomes.
 
 ## Description
 Each function represents a chore (like mowing the yard or watering the garden).  
 Each task runs asynchronously using `setTimeout`, and returns a **Promise** that either **resolves** if the chore is completed or **rejects** if the person "falls asleep" and fails the task.
-The chores are chained together using `.then()` and `.catch()` for cleaner code than nested callbacks.
+The `doSummerChores` function uses the `async/await` pattern instead of chained `then()` calls. This makes the code easier to read and maintain.
 
 If all chores succeed, the script logs: "(name) finished all their chores!"
 
